@@ -29,12 +29,15 @@ console.log(power(6, 2))
 console.log(power(16, 24))
 
 
-/*Kata 4: FACTORIAL (2 POINTS)
+//Kata 4: FACTORIAL (2 POINTS)
 
-function factorial(m) {
-  let answer = m
-  for (let i = 0; i >= -1; i++)
-    answer = multiply(answer, answer)
-  return answer
+
+function factorial(n) {
+  if (n === 0 || n === 1)
+    return 1;
+  for (var i = n - 1; i >= 1; i--) {
+    n *= i;
+  }
+  return n;
 }
-console.log(factorial(125))*/
+console.log(factorial(4));
